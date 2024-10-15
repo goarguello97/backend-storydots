@@ -4,7 +4,10 @@
   "description": "Backend for StoryDots challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.ts",
+    "build": "tsc",
+    "start": "node ./dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,13 @@
   },
   "homepage": "https://github.com/goarguello97/backend-storydots#readme",
   "devDependencies": {
+    "nodemon": "^3.1.7",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "sequelize": "^6.37.4"
   }
 }
