@@ -5,11 +5,14 @@
     "target": "ES2015",
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "./dist",
+    "rootDir": "./",
     "typeRoots": ["./node_modules/@types"]
   },
   "ts-node": {
     "esm": true
   },
-  "lib": ["es2015"]
+  "lib": ["es2015"],
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
 }
